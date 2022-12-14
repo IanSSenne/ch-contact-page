@@ -1,0 +1,112 @@
+html,
+body {
+	background-color: #222;
+	color: #ccc;
+}
+
+footer {
+	background-color: #333;
+	height: 50px;
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1,
+h2 {
+	color: #99f;
+}
+
+h1 {
+	font-size: 32px;
+	margin-left: 10px;
+	line-height: 50px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+main {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0px 50px 0px;
+}
+main > * {
+	margin: 2em 0px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-us {
+	max-width: 300px;
+	position: relative;
+	padding: 10px;
+	overflow-x: clip;
+}
+#contact-us > div {
+	background-color: #555;
+	padding: 10px;
+	border-radius: 10px 0px 0px 10px;
+	position: relative;
+	width: 100%;
+	right: -50%;
+	max-width: 300px;
+	transition: 0.5s;
+}
+#contact-us:hover > div {
+	right: 10px;
+}
+#contact-us:not(:hover) > div:focus-within {
+	right: 10px;
+}
+
+.align-content-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#about-us {
+	width: 100%;
+}
+.content-align {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+figure {
+	margin: 1em;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #333;
+	height: 50px;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+}
+
+.navbar li {
+	display: inline-block;
+	background-color: #222;
+	margin: 10px;
+	height: 30px;
+}
+.navbar li a {
+	line-height: 130%;
+	color: #eee;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 24px;
+}
